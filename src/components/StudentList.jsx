@@ -21,15 +21,15 @@ function StudentList({ students }) {
                 <form className="edit-form">
                     <label>
                         Nome:
-                        <input type="text" name="name" value={student.name} />
+                        <input type="text" name="name" />
                     </label>
                     <label>
                         Corso:
-                        <input type="text" name="course" value={student.course} />
+                        <input type="text" name="course" />
                     </label>
                     <label>
                         Stato:
-                        <select name="status" value={student.status}>
+                        <select name="status" >
                             <option value="active">Attivo</option>
                             <option value="inactive">Inattivo</option>
                         </select>

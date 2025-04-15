@@ -14,6 +14,7 @@ function App() {
   const urlApi = "https://jsonplaceholder.typicode.com/users"
 
   const [students, setStudents] = useState([]);
+  const [filteredStudents, setFilteredStudents] = useState(students);
 
   useEffect(() => {
     axios.get(urlApi)
@@ -54,7 +55,7 @@ function App() {
       </section>
 
       <section className="filter-section">
-        <StudentFilter />
+        <StudentFilter students={students} setFilteredStudents={setFilteredStudents} />
       </section>
 
       <section className="list-section">
@@ -68,7 +69,7 @@ function App() {
             </select>
           </div>
         </div>
-        <StudentList students={students} />
+        <StudentList students={filteredStudents} />
       </section>
     </main>
   )

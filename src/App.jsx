@@ -31,6 +31,7 @@ function App() {
           }
         })
         setStudents(newUsers);
+        setFilteredStudents(newUsers);
       })
 
     // {

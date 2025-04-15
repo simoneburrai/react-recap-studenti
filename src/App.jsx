@@ -52,7 +52,7 @@ function App() {
       <div id="status-message" className="status-message"></div>
       <section className="form-section">
         <h2>Aggiungi Studente</h2>
-        <StudentForm students={students} setStudents={setStudents} />
+        <StudentForm students={filteredStudents} setStudents={setFilteredStudents} />
       </section>
 
       <section className="filter-section">
